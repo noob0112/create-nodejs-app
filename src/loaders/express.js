@@ -1,7 +1,5 @@
-const bodyParser = require("body-parser");
-const path = require('path');
-const cors = require("cors");
-// const { engine } = require("express-handlebars");
+import bodyParser from "body-parser";
+import cors from "cors";
 
 module.exports = async (app) => {
     app.get("/status", (req, res) => {
@@ -15,16 +13,6 @@ module.exports = async (app) => {
     app.use(cors());
     app.use(bodyParser.urlencoded({ extended: false, limit: "20mb" }));
     app.use(bodyParser.json({ limit: "20mb" }));
-    
-    // app.engine("hbs", engine({
-    //     extname: '.hbs'
-    // }));
-    // app.set("view engine", "hbs");
-    // app.set("views", "./src/views");
-
-    // app.get('/', (req, res) => {
-    //     res.render('pages/home')
-    // })
 
     return app;
 };

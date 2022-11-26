@@ -1,6 +1,6 @@
-const winston = require('winston');
-const { SeqTransport } = require('@datalust/winston-seq');
-const path = require('path');
+import winston from "winston";
+// import { SeqTransport } from "@datalust/winston-seq";
+import path from "path";
 
 const logger = winston.createLogger({
     // format của log được kết hợp thông qua format.combine

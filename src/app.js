@@ -1,9 +1,10 @@
-const express = require("express");
-const cors = require('cors')
-require('dotenv').config()
+import express from "express";
+// const cors = require('cors')
+import dotenv from "dotenv";
+dotenv.config();
 
-const loaders = require("./loaders");
-const logger = require('./utils/logger');
+import loaders from "./loaders/index.js";
+import logger from "./utils/logger.js";
 // const path = require("path");
 
 express().listen().close()

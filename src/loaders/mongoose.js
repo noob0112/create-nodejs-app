@@ -1,6 +1,6 @@
-const mongoose = require("mongoose");
-const { mongoUri } = require("../config/mongodb");
-const logger = require("../utils/logger");
+import mongoose from "mongoose";
+import configMongodb from "../config/mongodb";
+import logger from "../utils/logger";
 
 module.exports = async () => {
     try {
