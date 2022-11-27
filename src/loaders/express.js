@@ -1,7 +1,7 @@
 import bodyParser from "body-parser";
 import cors from "cors";
 
-module.exports = async (app) => {
+export default async (app) => {
     app.get("/status", (req, res) => {
         res.status(200).end();
     });

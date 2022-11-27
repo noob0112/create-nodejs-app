@@ -1,3 +1,6 @@
+import dotenv from "dotenv";
+dotenv.config();
+
 export default {
   uri: process.env.MONGO_URI,
   host: process.env.DB_HOST,

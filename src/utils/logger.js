@@ -2,7 +2,7 @@ import winston from "winston";
 // import { SeqTransport } from "@datalust/winston-seq";
 import path from "path";
 
-const logger = winston.createLogger({
+export default winston.createLogger({
     // format của log được kết hợp thông qua format.combine
     format: winston.format.combine(
         winston.format.colorize({
@@ -44,5 +44,3 @@ const logger = winston.createLogger({
         })
     ],
 })
-
-module.exports = logger;
